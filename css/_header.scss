@@ -172,11 +172,21 @@
         padding: 0 20px;
     }
     .logo {
-        width: 70px;
+        width: 65px;
     }
     .menu_btn {
-        top: 30px;
+        width: 30px;
+        height: 30px;
+        top: 35px;
         right: 20px;
+        span {
+            &:before {
+                top: -10px;
+            }
+            &:after {
+                top: 10px;
+            }
+        }
     }
 }
 }

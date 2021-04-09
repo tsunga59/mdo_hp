@@ -384,6 +384,12 @@
     }
     form {
         width: 85%;
+        dd {
+            input,
+            textarea {
+                padding: 8px 10px;
+            }
+        }
         .btn {
             button {
                 margin-top: 15px;
