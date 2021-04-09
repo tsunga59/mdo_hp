@@ -1,0 +1,33 @@
+/* footer */
+/* ============================================ */
+
+.footer {
+    width: 100%;
+    padding: 80px 0 30px;
+    // &_inner {
+    //     display: flex;
+    //     // justify-content: center;
+    //     align-items: center;
+    //     height: 100%;
+    // }
+    .logo {
+        width: 90px;
+        margin: 0 auto 40px;
+    }
+    .copyright {
+        text-align: center;
+        color: $subColor;
+    }
+}
+
+@include sp {
+
+.footer {
+    padding: 40px 0 15px;
+    .logo {
+        width: 70px;
+        margin-bottom: 25px;
+    }
+}
+
+}

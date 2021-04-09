@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>MDO Corporate</title>
+</head>
+<body>
+
+<!-- header -->
+<header id="header" class="header">
+    <h1>MDO Corporate</h1>
+    <div class="container">
+        <div class="header_inner">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo_white.png" alt="ロゴ">
+                </a>
+            </div>
+            <!-- pc -->
+            <nav>
+                <ul class="pc_menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#business">Business</a></li>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- sp (ハンバーガーメニュー) -->
+            <div id="menu_btn" class="menu_btn">
+                <span></span>
+            </div>
+            <nav id="menu_btn_nav" class="menu_btn_nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#business">Business</a></li>
+                    <li><a href="#company">Company</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- main -->
+<main>
+
+<!-- top -->
+<section id="top" class="top">
+    <div class="container">
+        <h2 id="top_title" class="top_title">
+            Magic<br>Desire<br>Organize<br>
+            <span>新しい自分を見つけよう</span>
+        </h2>
+        <!-- <div class="btn">
+            <a href="#">Get the App</a>
+        </div> -->
+        <a href="#about" id="scroll_icon" class="scroll_icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</section>
+
+<!-- about -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="main_title fade_in">
+            <span>WHO WE ARE</span>
+            「個人」と「企業」の可能性に着目し、<br class="pc">新たなマーケティング活動を可能にする<br class="pc">ビジネス集団
+        </h2>
+        <img src="images/about.png" alt="">
+    </div>
+</section>
+
+<!-- business -->
+<section id="business" class="business bg_black">
+    <div class="container">
+        <div class="top_area">
+            <div class="left_area fade_in">
+                <h2 class="main_title">
+                    <span>BUSINESS</span>
+                    事業内容
+                </h2>
+                <p class="main_text">
+                    タレントエージェンシー事業<br>
+                    タレントプロモーション事業<br>
+                    プラットフォーム事業
+                </p>
+            </div>
+            <div class="right_area">
+                <img src="images/business.png" alt="">
+            </div>
+        </div>
+        <ul>
+            <li>
+                <img src="images/icon_burger.svg" alt="">
+                <p class="title">タレント事業</p>
+                <p class="text">現在の所属タレント人数は50名。<br>(2021年3月時点)</p>
+            </li>
+            <li>
+                <img src="images/icon_dish.svg" alt="">
+                <p class="title">タレントマーケティング事業</p>
+                <p class="text">所属タレントを活用した<br>マーケティング事業を行います。</p>
+            </li>
+            <li>
+                <img src="images/icon_graph.svg" alt="">
+                <p class="title">プラットフォーム事業</p>
+                <p class="text">「個」がコンテンツを発信する、<br>C2Cプラットフォームを構築します。</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- company -->
+<section id="company" class="company bg_black">
+    <div class="container">
+        <div class="top_area">
+            <div class="left_area fade_in">
+                <h2 class="main_title">
+                    <span>COMPANY</span>
+                    会社概要
+                </h2>
+                <p class="main_text">
+                    会社名　MDO株式会社<br>
+                    代表　日浅央<br>
+                    設立日　2021年3月<br>
+                    所在地　〒150-0046<br>
+                    東京都渋谷区松濤1-28-2
+                </p>
+            </div>
+            <div class="right_area">
+                <img src="images/company.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="bg_area"></div>
+
+<!-- contact -->
+<section id="contact" class="contact">
+    <div class="container fade_in">
+        <h2 class="main_title">
+            お問い合わせ
+        </h2>
+        <p class="main_text">
+            サービスに関するお問い合わせ、<br class="sp">営業関連・マスメディアの方など<br>
+            MDOに関するご質問等に対応いたします。
+        </p>
+        <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfdsUc-D4JtGdoHlZD0tVYELZMY-jtTRn2lEi00pa1-PkVn-Q/formResponse" id="form">
+            <dl>
+                <dt>名前 <span>※</span></dt>
+                <dd><input type="text" id="name" name="entry.795087525" required></dd>
+                <dt>メールアドレス <span>※</span></dt>
+                <dd><input type="email" id="email" name="entry.597679336" required></dd>
+                <dt>お問い合わせ内容 <span>※</span></dt>
+                <dd><textarea name="entry.1697187690" id="textarea" cols="30" rows="8" required></textarea></dd>
+            </dl>
+            <div class="btn">
+                <input type="submit" class="submit-btn" value="submit"></input>
+            </div>
+        </form>
+        <p class="end-message">お問い合わせありがとうございました。<br>担当者が折り返しご連絡致します。</p>
+        <p class="false-message">送信に失敗しました。<br>内容をご確認の上、再度送信してください。</p>
+    </div>
+</section>
+
+</main>
+
+<!-- footer -->
+<footer class="footer bg_black">
+    <div class="container">
+        <div class="footer_inner">
+            <div class="logo">
+                <img src="images/logo_white.png" alt="ロゴ">
+            </div>
+            <p class="copyright">
+                &copy; 2021 MDO All Rights are Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+    
+<!-- javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+/* top */
+/* ============================================ */
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mainColor;
+    background: linear-gradient(135deg, #dd1173, #350e47);
+    height: 100vh;
+    position: relative;
+    .container {
+        height: auto;
+    }
+    // .btn {
+    //     a {
+    //         font-weight: bold;
+    //         color: $baseColor;
+    //         background-color: $mainColor;
+    //         padding: 20px 40px;
+    //         box-sizing: border-box;
+    //         border-radius: 5px;
+    //         &:hover {
+    //             color: $fontColor;
+    //             background-color: $baseColor;
+    //         }
+    //     }
+    // }
+    .scroll_icon {
+        position: absolute;
+        bottom: 90px;
+        left: 50%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1.5s ease;
+        &.appear {
+            opacity: 1;
+            visibility: visible;
+        }
+        span {
+            width: 24px;
+            height: 24px;
+            margin-left: -12px;
+            border-left: 1px solid $baseColor;
+            border-bottom: 1px solid $baseColor;
+            position: absolute;
+            top: 0;
+            transform: rotate(-45deg);
+            opacity: 0;
+            animation: sdb 2s infinite;
+            &:nth-of-type(1) {
+                animation-delay: 0s;
+            }
+            &:nth-of-type(2) {
+                top: 18px;
+                animation-delay: .15s;
+            }
+            &:nth-of-type(3) {
+                top: 36px;
+                animation-delay: .3s;
+            }
+        }
+    }
+    @keyframes sdb {
+        0%,
+        100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+}
+
+@include tab {
+    
+}
+
+@include sp {
+
+}
+
+
+/* about */
+/* ============================================ */
+
+.about {
+    h2.main_title {
+        text-align: center;
+        margin-bottom: 80px;
+        span {
+            color: $subColor;
+        }
+    }
+    img {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@include sp {
+
+.about {
+    h2.main_title {
+        font-size: 2.4rem;
+        width: 85%;
+        margin: 0 auto 40px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+}
+
+
+/* business */
+/* ============================================ */
+
+.business {
+    .top_area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 80px;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+        .left_area {
+            width: 50%;
+            h2.main_title {
+                color: $baseColor;
+                margin-bottom: 30px;
+                span {
+                    color: $subColor;
+                    margin-bottom: 15px;
+                }
+            }
+            .main_text {
+                font-weight: bold;
+                color: $subColor;
+                line-height: 1.7;
+            }
+        }
+        .right_area {
+            width: 50%;
+            img {
+                width: 65%;
+                margin: 0 auto;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            color: $baseColor;
+            text-align: center;
+            width: 32%;
+            img {
+                width: 45px;
+                height: 45px;
+                margin: 0 auto;
+            }
+            .title {
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 15px 0;
+            }
+            .text {
+                color: $subColor;
+            }
+        }
+    }
+}
+
+@include tab {
+
+.business {
+    ul {
+        li {
+            .title {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+}
+
+@include sp {
+
+.business {
+    .top_area {
+        padding: 0 20px;
+        margin-bottom: 50px;
+        position: relative;
+        .left_area {
+            width: 100%;
+            h2.main_title {
+                margin-bottom: 15px;
+                span {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .right_area {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%);
+            img {
+                width: 55%;
+            }
+        }
+    }
+    ul {
+        li {
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            img {
+                width: 35px;
+                height: 35px;
+            }
+            .title {
+                margin: 10px 0;
+            }
+
+        }
+    }
+}
+
+}
+
+
+/* company */
+/* ============================================ */
+
+.company {
+    padding: 20px 0 100px;
+    .top_area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 80px;
+        box-sizing: border-box;
+        .left_area {
+            width: 50%;
+            h2.main_title {
+                color: $baseColor;
+                margin-bottom: 30px;
+                span {
+                    color: $subColor;
+                    margin-bottom: 15px;
+                }
+            }
+            .main_text {
+                font-weight: bold;
+                color: $subColor;
+                line-height: 1.7;
+            }
+        }
+        .right_area {
+            width: 50%;
+            img {
+                width: 65%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@include tab {
+
+.company {
+    padding: 20px 40px 100px;
+}
+
+}
+@include sp {
+
+.company {
+    padding: 20px 20px 60px;
+    .top_area {
+        padding: 0 20px;
+        position: relative;
+        .left_area {
+            width: 100%;
+            h2.main_title {
+                margin-bottom: 15px;
+                span {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .right_area {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+}
+
+
+/* contact */
+/* ============================================ */
+
+.contact {
+    color: $baseColor;
+    background: url(../images/bg_wave.svg) no-repeat center center / cover, 
+    linear-gradient(135deg, #fc0a7e, #602bb6);
+    h2.main_title {
+        text-align: center;
+    }
+    .main_text {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    form {
+        width: 60%;
+        margin: 0 auto;
+        dt {
+            margin-bottom: 5px;
+            span {
+                font-size: 1.4rem;
+            }
+        }
+        dd {
+            width: 100%;
+            margin-bottom: 20px;
+            input,
+            textarea {
+                color: #333;
+                background-color: $baseColor;
+                width: 100%;
+                padding: 10px 15px;
+                box-sizing: border-box;
+                border-radius: 3px;
+            }
+        }
+        .btn {
+            text-align: center;
+            margin-top: 30px;
+            .submit-btn {
+                text-align: center;
+                background-color: #3898EC;
+                padding: 10px 30px;
+                border-radius: 3px;
+                transition: all .3s ease;
+                &:hover {
+                    opacity: .85;
+                }
+            }
+        }
+    }
+    .end-message,
+    .false-message {
+        display: none;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@include sp {
+
+.contact {
+    h2.main_title {
+        margin-bottom: 20px;
+    }
+    .main_text {
+        margin-bottom: 30px;
+    }
+    form {
+        width: 85%;
+        .btn {
+            button {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+}
+
+
+/* thanks */
+/* ============================================ */
+
+.thanks {
+    padding-top: 120px;
+    h2.main_title {
+        text-align: center;
+    }
+    .main_text {
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .btn {
+        text-align: center;
+        a {
+            font-weight: bold;
+            color: $baseColor;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 3px;
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+}
+
+@include sp {
+
+.thanks {
+    padding-top: 80px;
+    .main_text {
+        font-size: 2rem;
+    }
+}
+
+}
