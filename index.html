@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Mdo株式会社</title>
 </head>
@@ -15,7 +16,7 @@
     <div class="container">
         <div class="header_inner">
             <div class="logo">
-                <img src="images/logo_white.png" alt="ロゴ">
+                <img src="images/logo.png" alt="ロゴ">
             </div>
             <!-- pc -->
             <nav>
@@ -38,6 +39,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div id="overlay" class="overlay"></div>
         </div>
     </div>
 </header>
@@ -68,7 +70,7 @@
     <div class="container">
         <h2 class="main_title fade_in">
             <span>WHO WE ARE</span>
-            「個人」と「企業」の可能性に着目し、<br class="pc">新たなマーケティング活動を可能にする<br class="pc">ビジネス集団
+            「個」のエンパワーメントを追求し、<br class="pc">世界を元気にするサービス作りに挑戦し続ける
         </h2>
         <img src="images/about.png" alt="">
     </div>
@@ -94,18 +96,24 @@
             </div>
         </div>
         <ul>
-            <li>
-                <img src="images/icon_burger.svg" alt="">
+            <li class="fade_in">
+                <span>
+                    <i class="fas fa-users"></i>
+                </span>
                 <p class="title">タレント事業</p>
                 <p class="text">現在の所属タレント人数は50名。<br>(2021年3月時点)</p>
             </li>
-            <li>
-                <img src="images/icon_dish.svg" alt="">
+            <li class="fade_in">
+                <span>
+                    <i class="far fa-chart-bar"></i>
+                </span>
                 <p class="title">タレントマーケティング事業</p>
                 <p class="text">所属タレントを活用した<br>マーケティング事業を行います。</p>
             </li>
-            <li>
-                <img src="images/icon_graph.svg" alt="">
+            <li class="fade_in">
+                <span>
+                    <i class="far fa-mobile-alt"></i>
+                </span>
                 <p class="title">プラットフォーム事業</p>
                 <p class="text">「個」がコンテンツを発信する、<br>C2Cプラットフォームを構築します。</p>
             </li>
@@ -170,11 +178,11 @@
 </main>
 
 <!-- footer -->
-<footer class="footer bg_black">
+<footer class="footer">
     <div class="container">
         <div class="footer_inner">
             <div class="logo">
-                <img src="images/logo_white.png" alt="ロゴ">
+                <img src="images/logo.png" alt="ロゴ">
             </div>
             <p class="copyright">
                 &copy; 2021 Mdo Co. All Rights Reserved.

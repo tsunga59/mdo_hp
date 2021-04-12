@@ -39,7 +39,7 @@ $(function(){
         const speed = 600;
         const href= $(this).attr("href");
         const target = $(href == "#" || href == "" ? 'html' : href);
-        const position = target.offset().top;
+        const position = target.offset().top - 75;
         
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
@@ -49,6 +49,8 @@ $(function(){
 // ハンバーガーメニュー
 const header = document.getElementById("header");
 const menuBtn = document.getElementById("menu_btn");
+const headerObjects = document.querySelectorAll("#menu_btn_nav a");
+const overLay = document.getElementById("overlay");
 let menuOpen = false;
 menuBtn.addEventListener("click", function() {
     if (!menuOpen) {
@@ -58,6 +60,20 @@ menuBtn.addEventListener("click", function() {
         header.classList.remove("open");
         menuOpen = false;
     }
+});
+headerObjects.forEach(headerObject => {
+  headerObject.addEventListener("click", function() {
+    if (menuOpen) {
+      header.classList.remove("open");
+      menuOpen = false;
+    }
+  });
+});
+overLay.addEventListener("click", function() {
+  if (menuOpen) {
+    header.classList.remove("open");
+    menuOpen = false;
+  }
 });
 
 window.addEventListener("scroll", function() {

@@ -163,10 +163,14 @@
                 height: 45px;
                 margin: 0 auto;
             }
+            span {
+                font-size: 4.4rem;
+                color: $mainColor;
+            }
             .title {
                 font-size: 2rem;
                 font-weight: bold;
-                margin: 15px 0;
+                margin: 5px 0 10px;
             }
             .text {
                 color: $subColor;
